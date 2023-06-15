@@ -40,7 +40,7 @@
       "message": "Signed up successfully"
     }
 
-  - Note: The password should be stored in an encrypted format.
+- Note: The password should be stored in an encrypted format.
 
 ## 3. Sign In Endpoint
 
@@ -66,7 +66,7 @@
     }
     ```
 
-  - Note: The "message" string is obtained by calling the API endpoint <https://api.catboys.com/catboy>.
+- Note: The "message" string is obtained by calling the API endpoint <https://api.catboys.com/catboy>.
 
 ## 4. Edit/Add Phone Number Endpoint
 
@@ -94,4 +94,4 @@
     }
     ```
 
-  - Note: This request should be performed while the user is logged in by passing the authentication token in the request headers.
+- Note: This request should be performed while the user is logged in by passing the authentication token in the request headers.
