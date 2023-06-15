@@ -1,11 +1,11 @@
 const express = require('express');
 const app = express();
-const dbConfig = require('./database/dbConfig');
+const dbConnect = require('./database/dbConfig');
 
 // Connect to the database
-dbConfig.connect();
+dbConnect();
 
-const User = require('./user');
+const User = require('models/user.js');
 
 // Example: Saving a new user
 const newUser = new User({
