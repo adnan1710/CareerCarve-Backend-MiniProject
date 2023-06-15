@@ -57,7 +57,7 @@ exports.login = async (req, res) => {
 
         res.status(200).json({
             success: true,
-            message: "hewwo"
+            message: message
         });
     } catch (error) {
         res.status(500).json({
@@ -69,7 +69,7 @@ exports.login = async (req, res) => {
 
 exports.editPhoneNumber = async (req, res) => {
     const { phone_number } = req.body;
-    const userId = req.user.id; // Assuming you have implemented authentication and set the user ID in the request object
+    const userId = req.user.id;
 
     try {
         // Find the user by ID
