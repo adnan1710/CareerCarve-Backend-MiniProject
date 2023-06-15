@@ -1,6 +1,6 @@
 # Questionnaire API
 
-Backend Task: Create REST API for a questionnaire using Node.js and a database of your choice. (Used Mongodb). This project is a task given by CareerCarve in the Recruitment Drive.
+**Backend Task**: Create REST API for a questionnaire using Node.js and a database of your choice. (Used Mongodb). This project is a task given by CareerCarve in their Internship Cum PPO Recruitment Drive.
 
 This is a questionnaire API built using Node.js that allows users to choose and complete tests from a selection of available tests. It provides endpoints for user registration, login, submitting tests, and managing user details.
 
