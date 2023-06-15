@@ -1,3 +1,5 @@
+const mongoose = require('mongoose');
+
 const dbConfig = {
     connect: () => {
         // Connection URL
@@ -21,4 +23,6 @@ const dbConfig = {
     }
 };
 
-export default dbConfig;
+module.exports = {
+    connect: connect
+};
