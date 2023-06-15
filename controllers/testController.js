@@ -1,5 +1,5 @@
 const Test = require('../models/test');
-const UserTest = require('../models/userTest');
+const UserTest = require('../models/user');
 
 exports.submitTest = async (req, res) => {
     const { userId, testId, responses } = req.body;

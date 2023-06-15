@@ -1,0 +1,182 @@
+[
+    {
+        "id": 1,
+        "question": "What is the capital of France?",
+        "options": ["Paris", "London", "Berlin", "Rome"],
+        "correctAnswers": ["Paris"]
+    },
+    {
+        "id": 2,
+        "question": "Who painted the Mona Lisa?",
+        "options": ["Leonardo da Vinci", "Vincent van Gogh", "Pablo Picasso", "Michelangelo"],
+        "correctAnswers": ["Leonardo da Vinci"]
+    },
+    {
+        "id": 3,
+        "question": "What is the chemical symbol for gold?",
+        "options": ["Au", "Ag", "Cu", "Fe"],
+        "correctAnswers": ["Au"]
+    },
+    {
+        "id": 4,
+        "question": "Which country is famous for the Taj Mahal?",
+        "options": ["India", "China", "Egypt", "Brazil"],
+        "correctAnswers": ["India"]
+    },
+    {
+        "id": 5,
+        "question": "Who is credited with inventing the telephone?",
+        "options": ["Alexander Graham Bell", "Thomas Edison", "Albert Einstein", "Isaac Newton"],
+        "correctAnswers": ["Alexander Graham Bell"]
+    },
+    {
+        "id": 6,
+        "question": "What is the largest ocean in the world?",
+        "options": ["Pacific Ocean", "Atlantic Ocean", "Indian Ocean", "Arctic Ocean"],
+        "correctAnswers": ["Pacific Ocean"]
+    },
+    {
+        "id": 7,
+        "question": "Which is the longest river in the world?",
+        "options": ["Nile River", "Amazon River", "Yangtze River", "Mississippi River"],
+        "correctAnswers": ["Nile River"]
+    },
+    {
+        "id": 8,
+        "question": "Who wrote the play 'Romeo and Juliet'?",
+        "options": ["William Shakespeare", "Charles Dickens", "Jane Austen", "Mark Twain"],
+        "correctAnswers": ["William Shakespeare"]
+    },
+    {
+        "id": 9,
+        "question": "Which year did the World War II end?",
+        "options": ["1945", "1939", "1918", "1950"],
+        "correctAnswers": ["1945"]
+    },
+    {
+        "id": 10,
+        "question": "What is the largest planet in our solar system?",
+        "options": ["Jupiter", "Saturn", "Mars", "Earth"],
+        "correctAnswers": ["Jupiter"]
+    },
+    {
+        "id": 11,
+        "question": "Who painted the 'The Starry Night'?",
+        "options": ["Vincent van Gogh", "Pablo Picasso", "Claude Monet", "Salvador Dalí"],
+        "correctAnswers": ["Vincent van Gogh"]
+    },
+    {
+        "id": 12,
+        "question": "Which is the tallest mountain in the world?",
+        "options": ["Mount Everest", "K2", "Kangchenjunga", "Makalu"],
+        "correctAnswers": ["Mount Everest"]
+    },
+    {
+        "id": 13,
+        "question": "Who is known as the 'Father of Modern Physics'?",
+        "options": ["Albert Einstein", "Isaac Newton", "Niels Bohr", "Galileo Galilei"],
+        "correctAnswers": ["Albert Einstein"]
+    },
+    {
+        "id": 14,
+        "question": "Which is the largest desert in the world?",
+        "options": ["Sahara Desert", "Gobi Desert", "Arabian Desert", "Kalahari Desert"],
+        "correctAnswers": ["Sahara Desert"]
+    },
+    {
+        "id": 15,
+        "question": "Who is the author of 'To Kill a Mockingbird'?",
+        "options": ["Harper Lee", "J.D. Salinger", "George Orwell", "F. Scott Fitzgerald"],
+        "correctAnswers": ["Harper Lee"]
+    },
+    {
+        "id": 16,
+        "question": "What is the chemical symbol for oxygen?",
+        "options": ["O", "O2", "OH", "H2O"],
+        "correctAnswers": ["O"]
+    },
+    {
+        "id": 17,
+        "question": "Who is the Greek god of thunder?",
+        "options": ["Zeus", "Poseidon", "Hades", "Apollo"],
+        "correctAnswers": ["Zeus"]
+    },
+    {
+        "id": 18,
+        "question": "Which country is famous for the Great Wall?",
+        "options": ["China", "India", "Brazil", "Italy"],
+        "correctAnswers": ["China"]
+    },
+    {
+        "id": 19,
+        "question": "Who wrote the novel 'Pride and Prejudice'?",
+        "options": ["Jane Austen", "Charlotte Brontë", "Emily Brontë", "Virginia Woolf"],
+        "correctAnswers": ["Jane Austen"]
+    },
+    {
+        "id": 20,
+        "question": "Which is the smallest continent in the world?",
+        "options": ["Australia", "Asia", "Europe", "Africa"],
+        "correctAnswers": ["Australia"]
+    },
+    {
+        "id": 21,
+        "question": "Who painted the 'The Last Supper'?",
+        "options": ["Leonardo da Vinci", "Pablo Picasso", "Vincent van Gogh", "Michelangelo"],
+        "correctAnswers": ["Leonardo da Vinci"]
+    },
+    {
+        "id": 22,
+        "question": "Which is the largest waterfall in the world?",
+        "options": ["Angel Falls", "Niagara Falls", "Victoria Falls", "Iguazu Falls"],
+        "correctAnswers": ["Angel Falls"]
+    },
+    {
+        "id": 23,
+        "question": "Who is known as the 'Father of the Computer'?",
+        "options": ["Charles Babbage", "Alan Turing", "Bill Gates", "Steve Jobs"],
+        "correctAnswers": ["Charles Babbage"]
+    },
+    {
+        "id": 24,
+        "question": "Which is the national animal of India?",
+        "options": ["Bengal Tiger", "Lion", "Elephant", "Leopard"],
+        "correctAnswers": ["Bengal Tiger"]
+    },
+    {
+        "id": 25,
+        "question": "What is the chemical symbol for carbon?",
+        "options": ["C", "CO", "CO2", "Ca"],
+        "correctAnswers": ["C"]
+    },
+    {
+        "id": 26,
+        "question": "Who is the Greek goddess of wisdom?",
+        "options": ["Athena", "Aphrodite", "Hera", "Artemis"],
+        "correctAnswers": ["Athena"]
+    },
+    {
+        "id": 27,
+        "question": "Which country is famous for the Pyramids of Giza?",
+        "options": ["Egypt", "Greece", "Mexico", "Peru"],
+        "correctAnswers": ["Egypt"]
+    },
+    {
+        "id": 28,
+        "question": "Who wrote the novel '1984'?",
+        "options": ["George Orwell", "Ray Bradbury", "Aldous Huxley", "Margaret Atwood"],
+        "correctAnswers": ["George Orwell"]
+    },
+    {
+        "id": 29,
+        "question": "Which is the largest lake in the world?",
+        "options": ["Caspian Sea", "Lake Superior", "Lake Victoria", "Lake Baikal"],
+        "correctAnswers": ["Caspian Sea"]
+    },
+    {
+        "id": 30,
+        "question": "Which planet is known as the Red Planet?",
+        "options": ["Mars", "Venus", "Jupiter", "Saturn"],
+        "correctAnswers": ["Mars"]
+    }
+]

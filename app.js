@@ -5,7 +5,7 @@ const dbConnect = require('./database/dbConfig');
 // Connect to the database
 dbConnect();
 
-const User = require('models/user.js');
+const User = require('./models/user');
 
 // Example: Saving a new user
 const newUser = new User({
