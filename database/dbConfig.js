@@ -12,14 +12,22 @@ const dbConfig = {
         };
 
         // Connect to the database
-        mongoose
-            .connect(connectionString, options)
+        const connectionPromise = mongoose.connect(connectionString, options);
+
+        connectionPromise
             .then(() => {
                 console.log('Database connected successfully');
             })
             .catch((error) => {
                 console.error('Database connection error:', error);
             });
+
+        // Return a promise that resolves when the connection is successful or rejects with an error message
+        return new Promise((resolve, reject) => {
+            connectionPromise.then(resolve).catch(() => {
+                reject('Please specify a valid database connection string');
+            });
+        });
     }
 };
 
