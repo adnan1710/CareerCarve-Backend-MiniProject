@@ -1,26 +1,13 @@
-import User, { findOne } from '../models/user';
-import { encryptPassword, comparePasswords } from '../utils/encryptionUtil';
+const User = require('../models/user');
+const encryptionUtil = require('../utils/encryptionUtil');
 const axios = require('axios');
 
-export async function signup(req, res) {
+exports.signup = async (req, res) => {
     const { name, email, password, phone_number } = req.body;
 
     try {
+        const hashedPassword = await encryptionUtil.encryptPassword(password);
 
-        // Check if the email is already registered
-        const existingUser = await User.findOne({ email });
-
-        if (existingUser) {
-            return res.status(409).json({
-                success: false,
-                message: "Email already exists"
-            });
-        }
-
-        // Encrypt the password
-        const hashedPassword = await encryptPassword(password);
-
-        // Create a new user
         const user = new User({
             name,
             email,
@@ -40,9 +27,9 @@ export async function signup(req, res) {
             message: "Error signing up"
         });
     }
-}
+};
 
-export async function login(req, res) {
+exports.login = async (req, res) => {
     const { email, password } = req.body;
 
     try {
@@ -55,7 +42,7 @@ export async function login(req, res) {
             });
         }
 
-        const passwordMatch = await comparePasswords(password, user.password);
+        const passwordMatch = await encryptionUtil.comparePasswords(password, user.password);
 
         if (!passwordMatch) {
             return res.status(401).json({
@@ -78,9 +65,9 @@ export async function login(req, res) {
             message: "Error logging in"
         });
     }
-}
+};
 
-export async function editPhoneNumber(req, res){
+exports.editPhoneNumber = async (req, res) => {
     const { phone_number } = req.body;
     const userId = req.user.id; // Assuming you have implemented authentication and set the user ID in the request object
 

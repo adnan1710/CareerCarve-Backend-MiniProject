@@ -1,9 +1,9 @@
-export async function submitTest(req, res) {
+exports.submitTest = async (req, res) => {
     const { userId, testId, answers } = req.body;
 
     try {
         // Check if the user has already taken the test
-        const existingResponse = await testResponse.findOne({ userId, testId });
+        const existingResponse = await TestResponse.findOne({ userId, testId });
 
         if (existingResponse) {
             return res.status(400).json({
@@ -13,7 +13,7 @@ export async function submitTest(req, res) {
         }
 
         // Fetch the test details from the database based on the testId
-        const test = await test.findById(testId);
+        const test = await Test.findById(testId);
 
         if (!test) {
             return res.status(404).json({
@@ -41,7 +41,7 @@ export async function submitTest(req, res) {
         }
 
         // Store the user's response in the database
-        const testResponse = new testResponse({
+        const testResponse = new TestResponse({
             userId,
             testId,
             answers
@@ -61,4 +61,4 @@ export async function submitTest(req, res) {
             message: "Error submitting the test"
         });
     }
-}
+};

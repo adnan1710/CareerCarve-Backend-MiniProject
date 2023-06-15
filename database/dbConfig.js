@@ -2,9 +2,10 @@ const mongoose = require('mongoose');
 
 const dbConfig = {
     connect: () => {
-        // Connection URL
+        // Modify the connection URL with your own MongoDB connection string
         const connectionString = 'mongodb://adnan:Adnan123@localhost:27017/questionnaire';
 
+        // Modify options as per your requirements (e.g., adding authentication, SSL, etc.)
         const options = {
             useNewUrlParser: true,
             useUnifiedTopology: true,
@@ -13,7 +14,8 @@ const dbConfig = {
         };
 
         // Connect to the database
-        mongoose.connect(connectionString, options)
+        mongoose
+            .connect(connectionString, options)
             .then(() => {
                 console.log('Database connected successfully');
             })
@@ -23,6 +25,4 @@ const dbConfig = {
     }
 };
 
-module.exports = {
-    connect: connect
-};
+module.exports = dbConfig;

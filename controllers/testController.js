@@ -1,10 +1,10 @@
-import { findById } from '../models/test';
+const Test = require('../models/test');
 
-export async function submitTest(req, res) {
+exports.submitTest = async (req, res) => {
     const { userId, testId, responses } = req.body;
 
     try {
-        const test = await findById(testId);
+        const test = await Test.findById(testId);
 
         if (!test) {
             return res.status(404).json({
@@ -38,4 +38,4 @@ export async function submitTest(req, res) {
             message: "Error submitting the test"
         });
     }
-}
+};

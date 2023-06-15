@@ -1,6 +1,6 @@
 const express = require('express');
 const app = express();
-const dbConfig = require('./database/dbConfig').default;
+const dbConfig = require('./database/dbConfig');
 
 // Connect to the database
 dbConfig.connect();
@@ -10,8 +10,8 @@ app.use(express.json());
 
 // Load routes
 const welcomeRoutes = require('./routes/welcomeRoutes');
-const userRoutes = require('./routes/userRoutes').default;
-const testRoutes = require('./routes/testRoutes').default;
+const userRoutes = require('./routes/userRoutes');
+const testRoutes = require('./routes/testRoutes');
 
 // Register routes
 app.use('/api/welcome', welcomeRoutes);

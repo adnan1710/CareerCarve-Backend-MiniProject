@@ -1,10 +1,10 @@
-import { genSalt, hash, compare } from 'bcrypt';
+const bcrypt = require('bcrypt');
 
-export async function encryptPassword(password) {
-    const salt = await genSalt(10);
-    return await hash(password, salt);
-}
+exports.encryptPassword = async (password) => {
+    const salt = await bcrypt.genSalt(10);
+    return await bcrypt.hash(password, salt);
+};
 
-export async function comparePasswords(password, hashedPassword) {
-    return await compare(password, hashedPassword);
-}
+exports.comparePasswords = async (password, hashedPassword) => {
+    return await bcrypt.compare(password, hashedPassword);
+};
