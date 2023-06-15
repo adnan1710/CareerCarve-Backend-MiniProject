@@ -5,6 +5,25 @@ const dbConfig = require('./database/dbConfig');
 // Connect to the database
 dbConfig.connect();
 
+const User = require('./user');
+
+// Example: Saving a new user
+const newUser = new User({
+    name: 'John Doe',
+    email: 'johndoe@example.com',
+    password: 'password123',
+    phone_number: '1234567890'
+});
+
+newUser.save()
+    .then((user) => {
+        console.log('User saved:', user);
+    })
+    .catch((error) => {
+        console.error('Error saving user:', error);
+    });
+
+
 // Middleware for parsing JSON request bodies
 app.use(express.json());
 

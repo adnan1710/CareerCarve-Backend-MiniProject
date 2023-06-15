@@ -1,7 +1,7 @@
 const mongoose = require('mongoose');
 
-const dbConfig = {
-    connect: () => {
+const connect = async () => {
+    try {
         // Modify the connection URL with your own MongoDB connection string
         const connectionString = 'mongodb://adnan:Adnan123@localhost:27017/questionnaire';
 
@@ -12,15 +12,12 @@ const dbConfig = {
         };
 
         // Connect to the database
-        mongoose
-            .connect(connectionString, options)
-            .then(() => {
-                console.log('Database connected successfully');
-            })
-            .catch((error) => {
-                console.error('Please specify a valid database connection string. Connection error :', error);
-            });
+        await mongoose.connect(connectionString, options);
+
+        console.log('Database connected successfully');
+    } catch (error) {
+        console.error('Please specify a valid database connection string. Connection error:', error);
     }
 };
 
-module.exports = dbConfig;
+module.exports = connect;

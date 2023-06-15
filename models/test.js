@@ -1,30 +1,7 @@
-const mongoose = require('mongoose');
+const Q_set1 = require('./test1.json');
+const Q_set2 = require('./test2.json');
 
-const testSchema = new mongoose.Schema({
-    name: {
-        type: String,
-        required: true
-    },
-    questions: [
-        {
-            question: {
-                type: String,
-                required: true
-            },
-            options: [
-                {
-                    type: String,
-                    required: true
-                }
-            ],
-            correctAnswers: [
-                {
-                    type: String,
-                    required: true
-                }
-            ]
-        }
-    ]
-});
-
-module.exports = mongoose.model('Test', testSchema);
+module.exports = {
+    test1: Q_set1,
+    test2: Q_set2
+};

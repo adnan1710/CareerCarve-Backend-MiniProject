@@ -16,7 +16,18 @@ const userSchema = new mongoose.Schema({
     },
     phone_number: {
         type: String
-    }
+    },
+    testResponses: [
+        {
+            testId: {
+                type: mongoose.Schema.Types.ObjectId,
+                ref: 'Test',
+                required: true
+            },
+            responses: [String],
+            score: Number
+        }
+    ]
 });
 
 module.exports = mongoose.model('User', userSchema);
