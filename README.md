@@ -14,7 +14,7 @@ This is a questionnaire API built using Node.js that allows users to choose and 
 
 ## Installation
 
-1. Clone the repository: `git clone https://github.com/your-username/questionnaire-api.git`
+1. Clone the repository: git clone `https://github.com/adnan1710/CareerCarve-Backend-MiniProject.git`
 2. Install the dependencies: `npm install`
 
 ## Usage
