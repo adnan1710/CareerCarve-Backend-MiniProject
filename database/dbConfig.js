@@ -9,8 +9,6 @@ const dbConfig = {
         const options = {
             useNewUrlParser: true,
             useUnifiedTopology: true,
-            useCreateIndex: true,
-            useFindAndModify: false
         };
 
         // Connect to the database
