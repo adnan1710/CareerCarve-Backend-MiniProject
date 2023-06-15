@@ -1,5 +1,3 @@
-import { connect as _connect } from 'mongoose';
-
 const dbConfig = {
     connect: () => {
         // Connection URL
