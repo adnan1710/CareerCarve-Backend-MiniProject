@@ -3,7 +3,7 @@ import { connect as _connect } from 'mongoose';
 const dbConfig = {
     connect: () => {
         // Connection URL
-        const connectionString = 'mongodb://localhost:27017/mydatabase';
+        const connectionString = 'mongodb://adnan:Adnan123@localhost:27017/questionnaire';
 
         const options = {
             useNewUrlParser: true,
