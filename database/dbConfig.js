@@ -19,7 +19,9 @@ const dbConfig = {
             })
             .catch((error) => {
                 // console.error('Database connection error:', error);
-                console.error('Please specify a valid database connection string');
+                errorStr = 'Please specify a valid database connection string'
+                console.error(errorStr);
+                return errorStr;
             });
     }
 };
