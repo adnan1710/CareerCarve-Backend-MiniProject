@@ -3,7 +3,7 @@ const mongoose = require('mongoose');
 const connect = async () => {
     try {
         // Modify the connection URL with your own MongoDB connection string
-        const connectionString = 'mongodb://adnan:Adnan123@localhost:27017/questionnaire';
+        const connectionString = 'mongodb://localhost:27017mongodb+srv://adnan:OIrLLu8gtDgXnNtj@project.l2fiqld.mongodb.net/?retryWrites=true&w=majority';
 
         // Modify options as per your requirements (e.g., adding authentication, SSL, etc.)
         const options = {
